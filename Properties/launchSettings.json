@@ -4,8 +4,8 @@
     "windowsAuthentication": false, 
     "anonymousAuthentication": true, 
     "iisExpress": {
-      "applicationUrl": "http://localhost:22721",
-      "sslPort": 44382
+      "applicationUrl": "http://localhost:49607",
+      "sslPort": 0
     }
   },
   "profiles": {
@@ -17,11 +17,11 @@
         "ASPNETCORE_ENVIRONMENT": "Development"
       }
     },
-    "CrudChallengeApiWeb": {
+    "CrudChallengeWebApi": {
       "commandName": "Project",
       "launchBrowser": true,
       "launchUrl": "api/livro/listagem",
-      "applicationUrl": "https://localhost:5001;http://localhost:5000",
+      "applicationUrl": "http://localhost:5000",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
       }
