@@ -9,10 +9,10 @@ namespace CrudChallengeApiWeb.Util
 {
     public class DAL
     {
-        private static string Server = "localhost";
-        private static string Database = "livraria";
-        private static string User = "novousuario";
-        private static string Password = "minhasenha";
+        private static string Server = "sql10.freesqldatabase.com";
+        private static string Database = "sql10297638";
+        private static string User = "sql10297638";
+        private static string Password = "rI3irjRsFR";
         private MySqlConnection Connection;
 
         private string ConnectionString = $"Server={Server};Database={Database};Uid={User};Pwd={Password};Sslmode=none;charset=utf8;";
