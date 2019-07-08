@@ -30,7 +30,7 @@ namespace CrudChallengeApiWeb.Controllers
 
         // GET api/livro/5
         [HttpGet]
-        [Route("{id}")]
+        [Route("id/{id}")]
         public LivroModel RetornarLivro(int id)
         {
             return new LivroModel().RetornaLivro(id);

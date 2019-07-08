@@ -11,7 +11,7 @@ namespace CrudChallengeApiWeb.Models
     {
         public int Id { get; set; }
         public string Titulo { get; set; }
-        public decimal Valor { get; set; }
+        public double Valor { get; set; }
         public string Autor { get; set; }
         public string Tipo { get; set; }
 
@@ -62,7 +62,7 @@ namespace CrudChallengeApiWeb.Models
                 {
                     Id = int.Parse(dados.Rows[i]["Id"].ToString()),
                     Titulo = dados.Rows[i]["Titulo"].ToString(),
-                    Valor = decimal.Parse(dados.Rows[i]["Valor"].ToString()),
+                    Valor = double.Parse(dados.Rows[i]["Valor"].ToString()),
                     Autor = dados.Rows[i]["Autor"].ToString(),
                     Tipo = dados.Rows[i]["Tipo"].ToString()
                 };
@@ -84,7 +84,7 @@ namespace CrudChallengeApiWeb.Models
             {
                 Id = int.Parse(dados.Rows[0]["Id"].ToString()),
                 Titulo = dados.Rows[0]["Titulo"].ToString(),
-                Valor = decimal.Parse(dados.Rows[0]["Valor"].ToString()),
+                Valor = double.Parse(dados.Rows[0]["Valor"].ToString()),
                 Autor = dados.Rows[0]["Autor"].ToString(),
                 Tipo = dados.Rows[0]["Tipo"].ToString()
             };

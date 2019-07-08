@@ -9,13 +9,13 @@ namespace CrudChallengeApiWeb.Util
 {
     public class DAL
     {
-        private static string Server = "sql10.freesqldatabase.com";
-        private static string Database = "sql10297638";
-        private static string User = "sql10297638";
-        private static string Password = "rI3irjRsFR";
+        private static string Server = "crudchallengemysql.mysql.database.azure.com";
+        private static string Database = "livraria";
+        private static string User = "vitor_silva6@crudchallengemysql";
+        private static string Password = "CrudChallenge@1";
         private MySqlConnection Connection;
 
-        private string ConnectionString = $"Server={Server};Database={Database};Uid={User};Pwd={Password};Sslmode=none;charset=utf8;";
+        private string ConnectionString = $"Server={Server};Database={Database};Uid={User};Pwd={Password};Sslmode=Required;charset=utf8;";
 
         public DAL()
         {

@@ -25,7 +25,7 @@ namespace CrudChallengeWebApi
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddMvc();
+            services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
             services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
         }
 
@@ -37,6 +37,12 @@ namespace CrudChallengeWebApi
                 app.UseDeveloperExceptionPage();
             }
 
+            if (env.IsProduction() || env.IsStaging() || env.IsEnvironment("Staging_2"))
+            {
+                app.UseExceptionHandler("/Error");
+            }
+
+            app.UseStaticFiles();
             app.UseMvc();
         }
     }
